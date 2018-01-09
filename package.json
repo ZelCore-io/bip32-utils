@@ -2,17 +2,17 @@
   "name": "bip32-utils",
   "version": "0.11.1",
   "description": "A set of utilities for working with BIP32.",
-  "author": "Daniel Cousens",
+  "author": "Daniel Cousens, TheTrunk",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitcoinjs/bip32-utils.git"
+    "url": "https://github.com/TheTrunk/bip32-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/bitcoinjs/bip32-utils/issues"
+    "url": "https://github.com/TheTrunk/bip32-utils/issues"
   },
-  "homepage": "https://github.com/bitcoinjs/bip32-utils",
+  "homepage": "https://github.com/TheTrunk/bip32-utils",
   "keywords": [
     "bip32-utils",
     "bip32",
@@ -32,14 +32,14 @@
     "unit": "tape test/*.js"
   },
   "devDependencies": {
-    "bitcoinjs-lib": "^3.0.0",
+    "bitcoinjs-lib": "git://github.com/TheTrunk/hushjs#master",
     "keccak": "^1.3.0",
     "nyc": "*",
     "standard": "*",
     "tape": "*"
   },
   "peerDependencies": {
-    "bitcoinjs-lib": "^3.0.0"
+    "bitcoinjs-lib": "git://github.com/TheTrunk/hushjs#master"
   },
   "engines": {
     "node": ">=4.0.0"

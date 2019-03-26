@@ -1,6 +1,6 @@
 {
   "name": "bip32-utils",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "description": "A set of utilities for working with BIP32.",
   "author": "Daniel Cousens, TheTrunk",
   "main": "index.js",
@@ -22,6 +22,7 @@
     "discovery",
     "gap",
     "bitcoinjs",
+    "bitgo",
     "bitcoin"
   ],
   "scripts": {
@@ -32,14 +33,14 @@
     "unit": "tape test/*.js"
   },
   "devDependencies": {
-    "bitcoinjs-lib": "git://github.com/zelcash/bitcoinjs-lib#master",
+    "bitgo-utxo-lib": "git://github.com/zelcash/bitgo-utxo-lib#master",
     "keccak": "^1.3.0",
     "nyc": "*",
     "standard": "*",
     "tape": "*"
   },
   "peerDependencies": {
-    "bitcoinjs-lib": "git://github.com/zelcash/bitcoinjs-lib#master"
+    "bitgo-utxo-lib": "git://github.com/zelcash/bitgo-utxo-lib#master"
   },
   "engines": {
     "node": ">=4.0.0"

@@ -1,13 +1,15 @@
-var bitcoin = require('bitcoinjs-lib')
+var bitcoin = require('bitgo-utxo-lib')
 var Chain = require('../chain')
 var test = require('tape')
 var fixtures = require('./fixtures/chain')
 var createKeccakHash = require('keccak')
 
+var network = bitcoin.networks.bitcoin
+
 function segwitAddr (node) {
   var hash = bitcoin.crypto.hash160(node.getPublicKeyBuffer())
   var script = bitcoin.script.witnessPubKeyHash.output.encode(hash)
-  return bitcoin.address.fromOutputScript(script)
+  return bitcoin.address.fromOutputScript(script, network)
 }
 
 function ethAddr (node) {
@@ -22,7 +24,7 @@ var AF_MAPPING = {
 }
 
 fixtures.forEach(function (f) {
-  var node = bitcoin.HDNode.fromBase58(f.node)
+  var node = bitcoin.HDNode.fromBase58(f.node, network)
   var addressFunction = AF_MAPPING[f.addressFunction]
 
   test('constructor', function (t) {

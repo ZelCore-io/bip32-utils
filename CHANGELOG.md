@@ -1,3 +1,6 @@
+# 0.12.0
+* switches `bitcoinjs-lib` to `bitgo-utxo-lib`.
+
 # 0.11.0
 * changes `discoverChain` `queryCb` requirement to return an object, not Array
 

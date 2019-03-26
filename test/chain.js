@@ -1,4 +1,4 @@
-var bitcoin = require('bitcoinjs-lib')
+var bitcoin = require('bitgo-utxo-lib')
 var Chain = require('../chain')
 var test = require('tape')
 var fixtures = require('./fixtures/chain')

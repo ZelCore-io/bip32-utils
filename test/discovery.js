@@ -1,4 +1,4 @@
-var bitcoinjs = require('bitcoinjs-lib')
+var bitgotx = require('bitgo-utxo-lib')
 var Chain = require('../chain')
 var discovery = require('../discovery')
 var test = require('tape')
@@ -6,8 +6,8 @@ var test = require('tape')
 var fixtures = require('./fixtures/discovery')
 
 fixtures.valid.forEach(function (f) {
-  var network = bitcoinjs.networks[f.network]
-  var external = bitcoinjs.HDNode.fromBase58(f.external, network)
+  var network = bitgotx.networks[f.network]
+  var external = bitgotx.HDNode.fromBase58(f.external, network)
   var chain = new Chain(external, f.k)
 
   test('discovers until ' + f.expected.used + ' for ' + f.description + ' (GAP_LIMIT = ' + f.gapLimit + ')', function (t) {

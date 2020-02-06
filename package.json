@@ -33,14 +33,14 @@
     "unit": "tape test/*.js"
   },
   "devDependencies": {
-    "bitgo-utxo-lib": "git://github.com/zelcash/bitgo-utxo-lib#master",
+    "bitgo-utxo-lib": "https://github.com/zelcash/bitgo-utxo-lib",
     "keccak": "^1.3.0",
     "nyc": "*",
     "standard": "*",
     "tape": "*"
   },
   "peerDependencies": {
-    "bitgo-utxo-lib": "git://github.com/zelcash/bitgo-utxo-lib#master"
+    "bitgo-utxo-lib": "https://github.com/zelcash/bitgo-utxo-lib"
   },
   "engines": {
     "node": ">=4.0.0"

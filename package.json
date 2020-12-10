@@ -39,9 +39,6 @@
     "standard": "*",
     "tape": "*"
   },
-  "peerDependencies": {
-    "bitgo-utxo-lib": "https://github.com/zelcash/bitgo-utxo-lib"
-  },
   "engines": {
     "node": ">=4.0.0"
   }
